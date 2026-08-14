@@ -1,5 +1,8 @@
-#!/bin/bash
-# MEMPALACE PRE-COMPACT HOOK — Emergency save before compaction
+#!/opt/homebrew/bin/bash
+# MEMPALACE PRE-COMPACT HOOK
+# NOTE (Taiko fix): shebang changed from #!/bin/bash to /opt/homebrew/bin/bash
+# because macOS ships bash 3.2 which lacks `mapfile` (used in this script).
+# Requires: brew install bash — Emergency save before compaction
 #
 # Claude Code "PreCompact" hook. Fires RIGHT BEFORE the conversation
 # gets compressed to free up context window space.
