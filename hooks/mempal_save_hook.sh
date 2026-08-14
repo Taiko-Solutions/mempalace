@@ -1,8 +1,5 @@
-#!/opt/homebrew/bin/bash
-# MEMPALACE SAVE HOOK
-# NOTE (Taiko fix): shebang changed from #!/bin/bash to /opt/homebrew/bin/bash
-# because macOS ships bash 3.2 which lacks `mapfile` (used in this script).
-# Requires: brew install bash — Auto-save every N exchanges
+#!/bin/bash
+# MEMPALACE SAVE HOOK — Auto-save every N exchanges
 #
 # Claude Code "Stop" hook. After every assistant response:
 # 1. Counts human messages in the session transcript
